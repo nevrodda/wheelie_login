@@ -1,0 +1,2124 @@
+/*  Navigation CSS - Starts HERE*/
+
+
+#nav-container {
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   border-bottom: 1px solid #e8e8e8;
+}
+
+#main_nav {
+    display: flex;
+    width: 1100px;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.navbar-brand {
+    display: row;
+}
+
+#logo {
+    display: row;
+    width: 200px;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+    
+}
+
+.navbar-logo {
+    float: left;
+    height: 60px;
+    padding: 11px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.brand-name {
+    display: row;
+    float: left;
+    height: 60px;
+    padding: 18px 1px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Muller-BlackItalic' !important;
+    color: #66615B;
+    font-weight: 200;
+}
+
+.main_nav_search {
+    flex-basis: 1;
+    display: flex;
+    flex: 1;
+    height: 30px;
+    min-width: 350px;
+}
+
+.search {
+    height: 32px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.main_nav_menu {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+    width: 200px;
+    -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main_nav_menu_item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* @media rules */
+
+@media all and (max-width: 409px) {
+    
+    .navbar-logo {
+        padding: 15px 1px;
+    }
+    
+}
+
+@media all and (max-width: 630px) {
+  #main_nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    flex-flow: row wrap;
+  }
+  #main_nav_search {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;  
+    } 
+    
+  .main_nav_menu_item {
+        display: none;
+    }  
+    
+    
+}
+
+@media all and (max-width: 770px) {
+    .brand-name {
+        display: none;
+    } 
+    
+    .left-sidebar {
+        display: none;
+    }
+    
+    .main-scroll {
+        margin-right: 0 !important;
+        flex-grow: 1;
+    }
+    
+    #logo {
+        width: 60px;
+        justify-content: center;
+    }
+    
+    .hero-right {
+        display: none;
+    }
+    
+    .hero-left {
+        width: 770px !important;
+        margin-right: 2px !important;
+    }
+    
+    #constrain-width {
+        padding-top: 0px !important;
+    }
+    
+    .border {
+        border-color: #ffffff !important;
+    }
+    
+    .product-thumbnail {
+        width: 80px !important;
+        height: auto;
+    }
+    
+    .pro-thumb-modal {
+        width: 50px !important;
+        height: auto;
+    }
+    
+    .hot-wheels {
+    margin-top: 0px !important;
+}
+    .ask-wheelie {
+    margin-top: 0px !important;
+}
+    
+    .car-btn-comments {
+        display: none;
+    }
+    
+    .car-buttons-right {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 770px)  {
+    .flexcontainer-open-nav {
+        display: none !important;   
+    }
+    .car-btn-comments-small {
+        display: none !important;
+    }
+
+}
+
+
+
+@media all and (max-width: 1200px) {
+    .right-sidebar {
+        display: none;
+    } 
+    
+    .main-scroll {
+        width: 75% !important;
+    }
+    
+    .hero-left {
+        width: 570px !important;
+        margin-right: 60px !important;
+    }
+    
+    
+    
+}
+
+/* Button Styles */
+
+.btn1 {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Muller-Light';
+  font-weight: 600;
+  color: #000000;
+  font-size: 11px;
+  background: #ffffff;
+  padding: 8px 15px 8px 15px;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background: #e8e8e8;
+  text-decoration: none;
+}
+
+.btn2 {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Muller-Light';
+  font-weight: 600;    
+  background: #ea532a;
+  border-color: #ea532a;
+  font-size: 11px;
+  padding: 8px 15px 8px 15px;
+  border: solid #ea532a 1px;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+}
+
+.btn2:hover {
+  background: #FF7D59;
+  border: solid #FF7D59 1px;
+  text-decoration: none;
+}
+
+.btn-bid {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Muller-BlackItalic'; 
+  font-weight: 200;    
+  background: #92CD00;
+  border-color: #92CD00;
+  font-size: 17px;
+  padding: 8px 15px 8px 15px;
+  border: solid #92CD00 1px;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+}
+
+.btn-bid:hover {
+  background: #AAF200;
+  border: solid #AAF200 1px;
+  text-decoration: none;
+}
+}
+
+
+
+.btn3 {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Muller-BlackItalic';
+  font-weight: 600;    
+  background: #C9F52E;
+  border-color: #C9F52E;
+  font-size: 16px;
+  padding: 8px 15px 8px 15px;
+  border: solid #C9F52E 1px;
+  text-decoration: none;
+  color: #000;
+  fill: #fff;
+}
+
+.btn3:hover {
+  background: #709E01;
+  border: solid #709E01 1px;
+  text-decoration: none;
+}
+
+
+.btn-product-modal {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Muller-Light';
+  font-weight: 600;    
+  background: #ea532a;
+  border-color: #ea532a;
+  font-size: 11px;
+  padding: 8px 15px 8px 15px;
+  border: solid #ea532a 1px;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+}
+
+.btn-product-modal:hover {
+  background: #FF7D59;
+  border: solid #FF7D59 1px;
+  text-decoration: none;
+}
+
+.main-homepage-button {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  background: #ea532a;
+  border-color: #ea532a;
+  font-size: 12px;
+  padding: 0px 15px 8px 15px;
+  border: solid #ea532a 1px;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+  width: 120px;
+  height: 42px;
+}
+
+.main-homepage-button:hover {
+  background: #FF7D59;
+  border: solid #FF7D59 1px;
+  text-decoration: none;
+}
+
+.car-btn-brand {
+    background: #E8E8E8;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #999;
+    height: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    outline: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.car-btn-brand:hover {
+    background: #ffffff;
+}
+
+.car-btn-comments {
+    background: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #999;
+    height: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    outline: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.car-btn-comments:hover {
+    background: #E8E8E8;
+}
+
+.car-btn-comments-small {
+    background: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #999;
+    height: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    outline: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.car-btn-comments-small:hover {
+    background: #E8E8E8;
+}
+
+.car-btn-uparrow {
+    background: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000000;
+    height: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    outline: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.car-btn-uparrow:hover {
+    background: #E8E8E8;
+}
+
+
+
+.modal-btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Muller-Light';
+  font-weight: 600;    
+  background: #ea532a;
+  border-color: #ea532a;
+  font-size: 11px;
+  padding: 8px 15px 8px 15px;
+  border: solid #ea532a 1px;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row; /* works with row or column */
+  flex-direction: row;
+  flex: 1;    
+}
+
+.modal-btn:hover {
+  background: #FF7D59;
+  border: solid #FF7D59 1px;
+  text-decoration: none;
+}
+
+/* Button Styles */
+
+/*  Navigation CSS - Ends HERE*/
+
+/* h1,h2,h3,h4,h5,h6 -- Start --P */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Muli', "Helvetica", Arial, sans-serif; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-weight: 400;
+  margin: 20px 0 15px; }
+
+h1, h2, h3, h4, h5 { 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+h1, .h1 {
+  font-size: 3.2em;
+  font-weight: normal; 
+  font-style: normal; 
+  font-family: 'Muller-BlackItalic'; 
+}
+
+h2, .h2 {
+  font-size: 2.6em;
+  font-family: 'Muller-BlackItalic';    
+}
+
+h3, .h3 {
+  font-size: 1.825em;
+  line-height: 1.4;
+  margin: 20px 0 10px;
+  font-family: 'Muller-BlackItalic';
+      
+}
+
+h4, .h4 {
+  font-size: 1.4em;
+  font-weight: 200;
+  line-height: 1.2em; 
+  font-family: 'Muller-BlackItalic';
+}
+h5, .h5 {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-family: 'Muller-Light';    
+}
+
+h6, .h6 {
+  font-size: 0.9em;
+  font-weight: 200;
+  text-transform: uppercase; 
+  font-family: 'Muller-BlackItalic';
+  color: #66615B;    
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Muller-Light';
+}
+
+a {
+    color: #da552f;
+}
+
+a:hover {
+    color: #da552f !important;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee; 
+}
+
+body { font-family: 'Muller-Thin'; 
+
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+  color: #9A9A9A;
+  font-weight: 300;
+  line-height: 1.4em; }
+
+h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
+  font-size: 60%; }
+
+.title-uppercase {
+  text-transform: uppercase; }
+
+blockquote {
+  font-style: italic; }
+
+blockquote small {
+  font-style: normal; }
+
+.text-muted {
+  color: #DDDDDD; }
+
+.text-primary, .text-primary:hover {
+  color: #427C89; }
+
+.text-info, .text-info:hover {
+  color: #3091B2; }
+
+.text-success, .text-success:hover {
+  color: #42A084; }
+
+.text-warning, .text-warning:hover {
+  color: #BB992F; }
+
+.text-danger, .text-danger:hover {
+  color: #B33C12; }
+
+.glyphicon {
+  line-height: 1; }
+
+strong {
+  color: #403D39; }
+
+.icon-primary {
+  color: #7A9E9F; }
+
+.icon-info {
+  color: #68B3C8; }
+
+.icon-success {
+  color: #7AC29A; }
+
+.icon-warning {
+  color: #F3BB45; }
+
+.icon-danger {
+  color: #EB5E28; }
+
+.chart-legend .text-primary, .chart-legend .text-primary:hover {
+  color: #7A9E9F; }
+.chart-legend .text-info, .chart-legend .text-info:hover {
+  color: #68B3C8; }
+.chart-legend .text-success, .chart-legend .text-success:hover {
+  color: #7AC29A; }
+.chart-legend .text-warning, .chart-legend .text-warning:hover {
+  color: #F3BB45; }
+.chart-legend .text-danger, .chart-legend .text-danger:hover {
+  color: #EB5E28; }
+
+/*     General overwrite     */
+body {
+  color: #66615b;
+  font-size: 14px;
+  font-family: 'Muller-Light'; }
+  body .wrapper {
+    min-height: 100vh;
+    position: relative; }
+
+a {
+  color: #000000; }
+  a:hover, a:focus {
+    color: #da552f;
+    text-decoration: none; }
+
+a:focus, a:active,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  outline: 0 !important; }
+
+.ui-slider-handle:focus,
+.navbar-toggle,
+input:focus,
+button:focus {
+  outline: 0 !important; }
+
+
+/* h1,h2,h3,h4,h5,h6 -- End --P */
+
+/* main-banner - Start */
+
+.hello-banner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#banner-container {
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   border-bottom: 1px solid #e8e8e8;
+}
+
+.main-banner {
+    display: flex;
+    width: 1100px;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+/* main-banner - Start */
+
+/* Cards - CSS */
+
+.card {
+  border-radius: 6px;
+  outline: #E8E8E8 solid 1px;
+  background-color: #FFFFFF;
+  color: #252422;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; }
+.grey-box{
+  border-radius: 6px;
+  color: #252422;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; }
+  .card .image {
+    width: 100%;
+    overflow: hidden;
+    height: 260px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    .card .image img {
+      width: 100%; }
+  .card .content {
+    padding: 15px 15px 10px 15px; }
+  .card .header {
+    padding: 20px 20px 0; }
+  .card .description {
+    font-size: 16px;
+    color: #66615b; }
+  .card h6 {
+    font-size: 12px;
+    margin: 0; }
+  .card .category,
+  .card label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9A9A9A;
+    margin-bottom: 0px; }
+    .card .category i,
+    .card label i {
+      font-size: 16px; }
+  .card label {
+    font-size: 15px;
+    margin-bottom: 5px; }
+  .card .title {
+    margin: 0;
+    color: #252422;
+    font-weight: 300; }
+  .card .avatar {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 5%;
+    margin-right: 5px; }
+  .card .footer {
+    padding: 0;
+    line-height: 30px; }
+    .card .footer .legend {
+      padding: 5px 0; }
+    .card .footer hr {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+  .card .stats {
+    color: #a9a9a9;
+    font-weight: 300; }
+    .card .stats i {
+      margin-right: 2px;
+      min-width: 15px;
+      display: inline-block; }
+  .card .footer div {
+    display: inline-block; }
+  .card .author {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .card .author i {
+    font-size: 14px; }
+  .card.card-separator:after {
+    height: 100%;
+    right: -15px;
+    top: 0;
+    width: 1px;
+    background-color: #DDDDDD;
+    content: "";
+    position: absolute; }
+  .card .ct-chart {
+    margin: 30px 0 30px;
+    height: 245px; }
+  .card .table tbody td:first-child,
+  .card .table thead th:first-child {
+    padding-left: 15px; }
+  .card .table tbody td:last-child,
+  .card .table thead th:last-child {
+    padding-right: 15px; }
+  .card .alert {
+    border-radius: 4px;
+    position: relative; }
+    .card .alert.alert-with-icon {
+      padding-left: 65px; }
+  .card .icon-big {
+    font-size: 3em;
+    min-height: 64px; }
+  .card .numbers {
+    font-size: 2em;
+    text-align: right; }
+    .card .numbers p {
+      margin: 0; }
+  .card ul.team-members li {
+    padding: 10px 0px; }
+    .card ul.team-members li:not(:last-child) {
+      border-bottom: 1px solid #F1EAE0; }
+
+.card-user .image {
+  border-radius: 8px 8px 0 0;
+  height: 150px;
+  position: relative;
+  overflow: hidden; }
+  .card-user .image img {
+    width: 100%; }
+.card-user .image-plain {
+  height: 0;
+  margin-top: 110px; }
+.card-user .author {
+  text-align: center;
+  text-transform: none;
+  margin-top: -65px; }
+  .card-user .author .title {
+    color: #403D39; }
+    .card-user .author .title small {
+      color: #ccc5b9; }
+.card-user .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px; }
+  .card-user .avatar.border-white {
+    border: 5px solid #FFFFFF; }
+  .card-user .avatar.border-gray {
+    border: 5px solid #ccc5b9; }
+.card-user .title {
+  font-weight: 600;
+  line-height: 24px; }
+.card-user .description {
+  margin-top: 10px; }
+.card-user .content {
+  min-height: 200px; }
+.card-user.card-plain .avatar {
+  height: 190px;
+  width: 190px; }
+
+.card-map .map {
+  height: 500px;
+  padding-top: 20px; }
+  .card-map .map > div {
+    height: 100%; }
+
+.card-user .footer,
+.card-price .footer {
+  padding: 5px 15px 10px; }
+.card-user hr,
+.card-price hr {
+  margin: 5px 15px; }
+
+.card-plain {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0; }
+  .card-plain .image {
+    border-radius: 4px; }
+.border-bottom {
+    border-bottom: 1px solid #e8e8e8;
+}
+/* Cards End */
+
+/* Footer */
+
+.footer {
+  background-attachment: fixed;
+  position: relative;
+  line-height: 20px;
+  border-top: 1px solid #e8e8e8;
+
+}
+  .footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: normal; }
+    .footer nav ul li {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 15px 3px;
+      line-height: 20px;
+      text-align: center; }
+    .footer nav ul a:not(.btn) {
+      color: #66615b;
+      display: block;
+      margin-bottom: 3px; }
+      .footer nav ul a:not(.btn):focus, .footer nav ul a:not(.btn):hover {
+        color: #403D39; }
+  .footer .copyright {
+    color: #66615b;
+    padding: 10px 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin: 15px 3px;
+    line-height: 20px;
+    text-align: center; }
+  .footer .heart {
+    color: #EB5E28; }
+/* Footer End */
+
+/* Flex Container - Hero  */
+
+.hero {
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.hero-width {
+    display: flex;
+    max-width: 1100px;
+    display: -webkit-flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero-left {
+    width: 580px;
+    margin-right: 70px;
+}
+
+.hero-right {
+    margin-right: 120px;
+}
+
+
+/* Flex Container - Hero  */
+
+/* Main container - 1100px */
+
+#main-container {
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   background-color: #F9F9F9;
+}
+
+#constrain-width {
+    display: flex;
+    max-width: 1100px;
+    display: -webkit-flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow: auto;
+    padding-bottom: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    background-color: #F9F9F9;
+}
+
+/* Main Container - 1100px finish */
+
+.border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DADADD;
+}
+
+/* Left Sidebar - Full View */
+
+.left-sidebar {
+    width: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    padding-left: 5px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+    
+}
+
+.left-sidebar-sell {
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    padding-left: 5px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+    
+}
+
+.sidebar-options {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.search-name {
+    border-radius: 3px;
+    
+}
+
+#sell-inputs {
+    height: 32px;
+    width: 400px;
+    padding-left: 5px;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DADADD;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/* Left Sidebar - End */
+
+/* Main Scroll Start */
+
+.main-scroll {
+    width: 60%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.main-scroll-sell {
+    width: 60%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.flexcontainer-main-list {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    margin-right: 20px;
+}
+
+.hot-wheels {
+    background-color: white;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    margin-top: 20px;
+    
+}
+
+.hot-wheels-product-right {
+    background-color: white;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.hot-wheels-bidding-right {
+    background-color: white;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    padding: 15px;
+    /* margin-top: 15px; */
+}
+
+.ask-wheelie {
+    margin-top: 20px;
+    background-color: white;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    
+}
+
+.carousel-container {
+    padding: 15px;
+    background-color: white;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    margin-top: 20px;
+    
+}
+
+/* Main Scroll - End */
+
+.right-sidebar {
+    width: 25%;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding-left: 5px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+
+
+/* Flex Containers */
+
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: column;
+   -webkit-flex-direction: column;
+}
+
+.flexcontainer-row {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row;
+   -webkit-flex-direction: row;
+}
+
+.flexcontainer-row:hover {
+   background-color: #f9f9f9;
+}
+
+flexcontainer-column {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: column;
+   -webkit-flex-direction: column;    
+}
+
+.flexcontainer-row-modal {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row;
+   -webkit-flex-direction: row;
+    padding: 15px;
+}
+
+
+.flexcontainer-row-car {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row;
+   -webkit-flex-direction: row;  
+   border-bottom: 1px solid #cecece ;    
+}
+
+.flexcontainer-row-car:hover {
+   background-color: #f9f9f9;
+}
+
+.flexcontainer-sidebar {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row;
+   -webkit-flex-direction: row;
+   padding-left: 5px;
+   margin-top: 5px;
+}
+
+.flexcontainer-sidebar:hover {
+   border: 1px solid #e5e5e5;
+   background-color: #ffffff;
+   border-radius: 3px;
+    }  
+
+.flexcontainer-sidebar:focus {
+   border: 1px solid #e5e5e5;
+   background-color: #ffffff;
+   border-radius: 1px;
+    } 
+}
+
+.flexcontainer-start {
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; 
+   flex-direction: row;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   width: 25%;
+}
+
+.flexcontainer-end {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+   width: 75%;
+}
+
+#sidebar-img {
+    border-radius: 3px;
+}
+
+.flexcontainer-open-nav {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: column;
+   -webkit-flex-direction: column;
+}
+
+#car-box-1 {
+    width: 140px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+
+#car-box-2 {
+    display: flex;
+    margin: 15px;
+    width: 80%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+#car-box-1-related {
+    width: 40%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+
+#car-box-2-related {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+#car-box-3 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 20%;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 23px;
+}
+
+/* Flex Containers - End */
+
+/* Products View - Homepage*/
+
+.car-container {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: row !important; /* works with row or column */
+    flex-direction: row !important;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: auto;
+    background-color: red;
+}
+
+
+.product-header {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: brown;
+}
+
+
+
+.product-thumbnail {
+    border-radius: 3px;
+    margin-top: 42px;
+    margin-left: 15px;
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.product-thumbnail-related {
+    border-radius: 3px;
+    margin-top: 40px;
+    padding-left: 15px;
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.product-thumb-modal {
+    border-radius: 3px;
+    display: block;
+    width: 120px;
+    height: auto;
+    margin-top: 27px;
+}
+
+#car-box-1-modal {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+
+.product-title-stack {
+    padding-top: 13px;
+}
+
+.product-image {
+    width: 25%;
+}
+
+.number {
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+    width: 20%;
+    font-family: 'Muller-Light';
+}
+
+.item-price {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 15%;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Muller-BlackItalic';
+    height: 30px;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.item-price-related {
+    font-size: 20px;
+    text-transform: uppercase; 
+    font-family: 'Muller-BlackItalic';
+    color: #000000;  
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+   padding-left: 15px;
+}
+
+.car-hover {
+   border-bottom: 1px solid #e8e8e8;
+}
+
+.car-buttons-left {
+   width: 50%;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; 
+   flex-direction: row;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+
+.car-buttons-right {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.car-btns-row {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.bottom-line {
+    border-bottom: 1px solid #F1EAE0;
+}
+
+.product-header-top {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.feed-navigation {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+/* Ul Styling */
+
+.product-underline {
+   border-bottom: 1px solid #F1EAE0;
+}
+
+/* Ul Styling */
+
+/* Content Styling */
+
+.content {
+    margin: 15px;
+}
+
+/* Content Styling */
+
+/* Emoji's */
+
+.tenor-gif-embed {
+    height: 22px;
+    width: 22px;
+}
+
+/*giphy end */
+#subscribe-image {
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+/* Small Feeds PopOut - Small Device*/
+
+.navigation-open {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   padding-top: 55px;
+   padding-bottom: 15px;
+}
+}
+
+/* Ask Wheelie - Nested containers*/
+
+.question {
+    width: 20%;
+    margin-left: 5px;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-radius: 3px;
+    padding: 10px 20px;
+    list-style: none !important;
+}
+
+#question-header {
+    margin-left: 15px;
+}
+
+
+/* Avatars */
+.rounded-avatar {
+    position: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.rounded-avatar-size {
+    height: 40px;
+    width: 40px;
+}
+
+.bid-avatar {
+    position: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+#avatar-img {
+    padding: 15px;
+}
+
+#car-thumbnail {
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+}
+
+.car-title {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;  
+   height: 20px;    
+}
+
+.car-title-productview {
+        display: -webkit-flex;
+       display: flex;
+       -webkit-flex-direction: row /* works with row or column */
+       flex-direction: row;
+       -webkit-align-items: center;
+       align-items: center;  
+       height: 20px;
+    }
+
+.car-description {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;  
+   height: 40px;    
+}
+
+
+
+#car-description-inner {
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   width: 85%;   
+   padding-right: 15px; 
+   font-size: 16px;
+    line-height: 1.4em;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Muller-Light';  
+    height: 40px;
+}
+
+#car-description-related {
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   width: 100%;   
+   padding-right: 15px; 
+   font-size: 16px;
+    line-height: 1.4em;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Muller-Light';    
+}
+
+#car-details {
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   width: 85%;   
+   padding-right: 15px; 
+    font-size: 0.9em;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: 'Muller-BlackItalic';
+    color: #66615B;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#car-bids {
+    margin: 15px;
+}
+
+#product-modal-buttons {
+    padding-left: 15px;
+}
+
+/* Rounded avatars */
+
+/* Last Li - Ending */
+
+.item:last-child{
+        border-bottom: none;
+      }
+
+.recommendations {
+    padding: 15px;
+}
+
+.show-more-products {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    flex: 1 100%;
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+/* Modal CSS */
+
+/* .modal-transparent */
+
+.modal-transparent {
+  background: transparent;
+}
+.modal-transparent .modal-content {
+  background: transparent;
+}
+.modal-backdrop.modal-backdrop-transparent {
+  background: #F8F8F8;
+}
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+/* .modal-fullscreen */
+
+.modal-container {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column/* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   background: transparent;    
+}
+
+.modal-fullscreen {  
+  background: transparent;
+  justify-content: center;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+  
+}
+
+@media (max-width: 1100px) {
+    .right-sidebar-product {
+        display: none;
+    }
+  
+}
+
+/* Modal Styling */
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: none !important;
+    padding-top: 80px;
+}
+
+.hero-modal {
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.hero-modal-top {
+    width: 70% !important;
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+}
+
+.hero-modal-bottom {
+    width: 70% !important;
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+}
+
+
+
+.modal-hero-flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+    margin-top: 3%;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 200;
+    background: #bbbbbb;
+    border-radius: 50%;
+    padding: 14px 14px 13px 14px;
+    width: 12px;
+    height: 12px;
+}
+.modal-close-btn:hover {
+    background: #dc5425;
+}
+
+.flexcontainer-signup {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   overflow: auto;
+   flex-basis: 1;
+   flex: 1;
+   width: 60%;
+}
+.sign-up-input {
+    padding: 5px;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row; /* works with row or column */
+    flex-direction: row;
+    flex: 1;
+}
+.affix-top {
+    
+  top: 380px !important;
+}
+
+.affix {
+  top: 15px;
+  width: 150px;
+}
+
+#vehicleTitle {
+  font-size: 1.2em;
+    font-weight: 200;
+    line-height: 1.2em;
+    font-family: 'Muller-BlackItalic';
+  margin-top: -10px;
+  width: 80%;
+  padding-right: 15px;
+}
+
+#vehicleTitleRelated {
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.2em;
+    font-family: 'Muller-BlackItalic';
+    margin-top: -10px;
+    width: 100%;
+    padding-right: 15px;
+}
+
+}
+
+/* Car Pages */
+#modal-body {
+    display: flex;
+    flex: row;
+    display: -webkit-flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px;
+
+}
+
+.modal-product-fullwidth {
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+}
+
+/* Product-Modal CSS*/
+
+.main-scroll-product {
+    width: 66%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.right-sidebar-product {
+    width: 33%;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 5px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+#constrain-width-product-modal {
+
+    display: flex;
+    display: -webkit-flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-justify-content: center;
+   justify-content: center;
+    overflow: auto;
+    max-width: 1100px;
+}
+
+
+/* Navigation Dropdown Search Bar */
+
+
+
+.input {
+    font-family: 'Muller-Light';
+    font-size: 16px;
+    color: #DADADD;
+}
+
+.search {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.search input {
+    height: 32px;
+    width: 100%;
+    padding: 0 12px 0 25px;
+    background: white url("http://cssdeck.com/uploads/media/items/5/5JuDgOa.png") 8px 6px no-repeat;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DADADD;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: #DADADD;
+}
+
+.search input:focus + .results { display: block }
+
+.search .results {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 15px;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DADADD;
+    border-radius: 3px;
+    background-color: #ffffff;
+    
+}
+
+.search .results li { display: block }
+
+.search .results li:first-child { margin-top: -1px }
+
+.search .results li:first-child:before, .search .results li:first-child:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    border: 5px outset transparent;
+}
+
+.search .results li:first-child:before {
+    border-bottom: 5px solid #c4c7d7;
+    top: -11px;
+}
+
+.search .results li:first-child:after {
+    border-bottom: 5px solid #fdfdfd;
+    top: -10px;
+}
+
+.search .results li:first-child:hover:before, .search .results li:first-child:hover:after { display: none }
+
+.search .results li:last-child { margin-bottom: -1px }
+
+.search .results a {
+    display: block;
+    position: relative;
+    margin: 0 -1px;
+    padding: 6px 40px 6px 10px;
+    color: #66615B;
+    font-family: 'Muller-Light' !important;
+    font-weight: 500;
+    text-shadow: 0 1px #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.search .results a span { font-weight: 400 }
+
+.search .results a:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -9px;
+}
+
+.search .results a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #F9F9F9;
+}
+
+:-moz-placeholder {
+    color: #ffffff;
+    font-weight: 200;
+}
+
+::-webkit-input-placeholder {
+    color: #a7aabc;
+    font-weight: 200;
+}
+
+.lt-ie9 .search input { line-height: 26px }
+
+/* New ForLoop Car Listings CSS*/
+
+/*Odometer */
+
+.odometer {
+    font-size: 60px;
+}
+
+.dz-message {
+    
+}
+
+
+
+

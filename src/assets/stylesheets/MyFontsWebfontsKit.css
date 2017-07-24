@@ -1,0 +1,21 @@
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*
+@import url("//hello.myfonts.net/count/338e21");
+*/
+  
+@font-face {font-family: 'Muller-BlackItalic';src: url('webfonts/.eot');src: url('webfonts/33BE4E_21_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33BE4E_21_0.woff2') format('woff2'),url('webfonts/33BE4E_21_0.woff') format('woff'),url('webfonts/33BE4E_21_0.ttf') format('truetype');}
+
+/*
+'Muller-Light'
+
+'Muller-Thin'
+
+*/
+
+
+@font-face {font-family: 'Muller-Light';src: url('webfonts/338E21_A_0.eot');src: url('webfonts/33BE4E_2A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33BE4E_2A_0.woff2') format('woff2'),url('webfonts/33BE4E_2A_0.woff') format('woff'),url('webfonts/33BE4E_2A_0.ttf') format('truetype');}
+
+*/  
+@font-face {font-family: 'Muller-Thin';src: url('webfonts/33BE4E_21_0.eot');src: url('webfonts/33BE4E_21_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33BE4E_21_0.woff2') format('woff2'),url('webfonts/33BE4E_21_0.woff') format('woff'),url('webfonts/33BE4E_21_0.ttf') format('truetype');}
+ 
